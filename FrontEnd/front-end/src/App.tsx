@@ -120,14 +120,16 @@ const App: React.FC = () => {
   timeFormat="HH:mm"
   timeIntervals={15}
   dateFormat="MMMM d, yyyy h:mm aa"
-  className='bg-red border-cyan-950'
+  nextMonthButtonLabel=">"
+  previousMonthButtonLabel="<"
+  popperClassName="react-datepicker__input-container input"
 />
 </div>
 </div>
+    <div className=' '>
 
-
-      <button type="submit" className='bg-black text-white'>Submit</button>
-
+      <button type="submit" className='bg-black text-white cursor-pointer rounded w-full h-10 active:scale-90'>Submit</button>
+      </div>
       
     </form>
     </div>
