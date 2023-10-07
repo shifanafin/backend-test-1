@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 3000;
 const blogRoutes = require('./routes/blogRoutes');
 const tokenRoutes = require('./routes/tokenRoutes');
 app.get('/',(req,res)=>{
-    res.send('<h1>Store Api</h1> <a href="/api/blogs">Blogs</a>')
+    res.send('<h1>Blog API</h1> <a href="/api/blogs">Blogs</a>')
 })
 // Use CORS middleware
 app.use(cors());

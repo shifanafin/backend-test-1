@@ -25,7 +25,7 @@ const addBlogPost = async (req, res) => {
         return res.status(400).json({ error: 'Invalid description' });
     }
 
-    if (!main_image || !main_image.endsWith('.jpg') || main_image.length > 1048576) {
+    if (!main_image || !/\.(jpeg|jpg)$/.test(main_image) || main_image.length > 1048576) {
         return res.status(400).json({ error: 'Invalid main_image' });
     }
 
