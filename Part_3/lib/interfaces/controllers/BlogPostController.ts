@@ -1,14 +1,14 @@
 // infrastructure/webserver/controllers/blogPost/BlogPostController.ts
 
 import { Request, Response } from 'express';
-import { ServiceLocator } from '../../../infrastructure/config/service-locator';
-import BlogPost from '../../../domain/entities/BlogPost';
-import BlogPostValidator from '../../../domain/validators/BlogPostValidator';
-import ListBlogPosts from '../../../application/use_cases/blogPost/ListBlogPosts';
-import CreateBlogPost from '../../../application/use_cases/blogPost/CreateBlogPost';
-import GetBlogPost from '../../../application/use_cases/blogPost/GetBlogPost';
-import UpdateBlogPost from '../../../application/use_cases/blogPost/UpdateBlogPost';
-import DeleteBlogPost from '../../../application/use_cases/blogPost/DeleteBlogPost';
+import { ServiceLocator } from '../../infrastructure/config/service-locator';
+import BlogPost from '../../domain/entities/BlogPost';
+import BlogPostValidator from '../../domain/validators/BlogPostValidator';
+import ListBlogPosts from '../../application/use_cases/blogPost/ListBlogPosts';
+import CreateBlogPost from '../../application/use_cases/blogPost/CreateBlogPost';
+import GetBlogPost from '../../application/use_cases/blogPost/GetBlogPost';
+import UpdateBlogPost from '../../application/use_cases/blogPost/UpdateBlogPost';
+import DeleteBlogPost from '../../application/use_cases/blogPost/DeleteBlogPost';
 
 export default {
 
