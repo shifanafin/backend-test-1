@@ -1,7 +1,9 @@
+
+
 import bootstrap from './lib/infrastructure/config/bootstrap';
 import createServer from './lib/infrastructure/webserver/server';
 
-// Start the server
+
 const start = async () => {
   try {
     await bootstrap.init();
